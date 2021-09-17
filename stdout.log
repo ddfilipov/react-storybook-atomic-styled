@@ -1,0 +1,25 @@
+
+> react-tsx-default-project@0.1.0 start /home/denis/formacion/todo-junto/react-tsx-default-project
+> react-scripts start
+
+Attempting to bind to HOST environment variable: 0.0.0.0
+If this was unintentional, check that you haven't mistakenly set it in your shell.
+Learn more here: https://cra.link/advanced-config
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://172.28.170.245/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /home/denis/formacion/todo-junto/react-tsx-default-project/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+Starting the development server...
+
+Files successfully emitted, waiting for typecheck results...
+Compiled successfully!
+
+You can now view react-tsx-default-project in the browser.
+
+  Local:            http://localhost:1234
+  On Your Network:  http://172.28.170.245:1234
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
