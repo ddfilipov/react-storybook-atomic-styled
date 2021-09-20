@@ -21,11 +21,11 @@ const StyledTitle = styled.h1`
 `;
 
 export const Title: FC<{ url: string, projectName: string }> = ({ url, projectName }) => {
-    return (
-        //<h1 className={`title`}>
-        <StyledTitle>
-            Welcome to <a href={url}>{projectName}!</a>
-        </StyledTitle>
-    );
+  return (
+    //<h1 className={`title`}>
+    <StyledTitle>
+      Welcome to <a href={url}>{projectName}!</a>
+    </StyledTitle>
+  );
 }
 

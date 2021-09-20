@@ -17,10 +17,10 @@ const SubtitleCodeStyled = styled.code`
 `;
 
 export const Subtitle : FC<{ codedText: string }> = ({codedText}) => {
-    return(
-        <SubtitleStyled>
-          Get started by editing{' '}
-          <SubtitleCodeStyled>{codedText}</SubtitleCodeStyled>
-        </SubtitleStyled>
-    )
+  return(
+    <SubtitleStyled>
+      Get started by editing{' '}
+      <SubtitleCodeStyled>{codedText}</SubtitleCodeStyled>
+    </SubtitleStyled>
+  )
 }

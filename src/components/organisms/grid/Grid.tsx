@@ -16,9 +16,9 @@ const GridStyled = styled.div`
 `
 
 export const Grid: FC = ({ children }) => {
-    return (
-        <GridStyled>
-            {children}
-        </GridStyled>
-    );
+  return (
+    <GridStyled>
+        {children}
+    </GridStyled>
+  );
 }

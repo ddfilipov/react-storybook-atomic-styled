@@ -36,11 +36,11 @@ const CardStyled = styled.a`
 `;
 
 export const Card: FC<CardProps> = (props) => {
-    return (
-        //<a href={props.href} className={`card`}>
-        <CardStyled href={props.href}>
-            <h2>{props.title}&rarr;</h2>
-            <p>{props.text}</p>
-        </CardStyled>
-    );
+  return (
+    //<a href={props.href} className={`card`}>
+    <CardStyled href={props.href}>
+      <h2>{props.title}&rarr;</h2>
+      <p>{props.text}</p>
+    </CardStyled>
+  );
 }
