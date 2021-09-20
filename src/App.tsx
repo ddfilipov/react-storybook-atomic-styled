@@ -1,10 +1,11 @@
 import type { FC } from 'react'
 import './index.css'
-import { Header } from './components/atoms/title/Title'
-import { Subheader } from './components/atoms/title/Subtitle'
+import { Title } from './components/atoms/title/Title'
+import { Subtitle } from './components/atoms/title/Subtitle'
 import { Card, CardProps } from './components/molecules/card/Card'
 import { Grid } from './components/organisms/grid/Grid'
-import { Footer } from './components/organisms/footer/Footer'
+import { Footer } from './components/molecules/footer/Footer'
+import styled from 'styled-components'
 
 const listadoCards: CardProps[] = [
   {
@@ -29,24 +30,46 @@ const listadoCards: CardProps[] = [
   },
 ]
 
+const ContainerStyled = styled.div`
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const MainStyled = styled.main`
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const App: FC = () => {
   return (
-    <div className={`container`}>
+    <ContainerStyled>
 
-      <main className={`main`}>
-        <Header url="https://nextjs.org" projectName="Next.js" />
-        <Subheader codedText="pages/index.js"/>
+      <MainStyled>
+        <Title url="https://nextjs.org" projectName="Next.js" />
+        <Subtitle codedText="pages/index.js"/>
         <Grid>
           {
             listadoCards.map((x, i) => (
-              <Card key={`item_${x.title}`} href={x.href} text={x.text} title={x.title} />
+              <Card key={`item_${x.title}`} 
+                    href={x.href} 
+                    text={x.text} 
+                    title={x.title} />
             ))
           }
         </Grid>
-      </main>
+      </MainStyled>
 
       <Footer />
-    </div>
+    </ContainerStyled>
   )
 }
 
