@@ -8,10 +8,10 @@ export const Footer : FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-            Powered by{' '}
-            <span className={`logo`}>
-                <img src="./favicon.ico" alt="React Logo" width={30} height={20} />
-            </span>
+                Powered by{' '}
+                <span className={`logo`}>
+                    <img src="./favicon.ico" alt="React Logo" width={30} height={20} />
+                </span>
             </a>
         </footer>
 

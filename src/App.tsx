@@ -1,10 +1,10 @@
 import type { FC } from 'react'
 import './index.css'
-import { Header } from './components/Header'
-import { Subheader } from './components/Subheader'
-import { Card, CardProps } from './components/Card'
-import { Grid } from './components/Grid'
-import { Footer } from './components/Footer'
+import { Header } from './components/atoms/header/Header'
+import { Subheader } from './components/atoms/subheader/Subheader'
+import { Card, CardProps } from './components/molecules/card/Card'
+import { Grid } from './components/organisms/grid/Grid'
+import { Footer } from './components/organisms/footer/Footer'
 
 const listadoCards: CardProps[] = [
   {
