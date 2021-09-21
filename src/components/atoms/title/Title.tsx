@@ -2,6 +2,11 @@ import React, { FC } from "react";
 import styled from 'styled-components'
 // import {StyledTitle} from '../src/styles/'
 
+export interface TitleProps {
+  url: string;
+  projectName: string;
+}
+
 const StyledTitle = styled.h1`
   margin: 0;
   line-height: 1.15;
@@ -20,7 +25,7 @@ const StyledTitle = styled.h1`
   }
 `;
 
-export const Title: FC<{ url: string, projectName: string }> = ({ url, projectName }) => {
+export const Title: FC<TitleProps> = ({ url, projectName }) => {
   return (
     //<h1 className={`title`}>
     <StyledTitle>

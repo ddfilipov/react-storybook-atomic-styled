@@ -8,6 +8,7 @@ export interface CardProps{
 }
 
 const CardStyled = styled.a`
+  display: block;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;

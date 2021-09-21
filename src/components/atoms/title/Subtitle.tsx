@@ -1,6 +1,10 @@
 import type {FC} from 'react';
 import styled from 'styled-components';
 
+export interface SubtitleProps{
+  codedText: string;
+}
+
 const SubtitleStyled = styled.p`
   text-align: center;
   line-height: 1.5;
@@ -16,7 +20,7 @@ const SubtitleCodeStyled = styled.code`
   Bitstream Vera Sans Mono, Courier New, monospace;
 `;
 
-export const Subtitle : FC<{ codedText: string }> = ({codedText}) => {
+export const Subtitle : FC<SubtitleProps> = ({codedText}) => {
   return(
     <SubtitleStyled>
       Get started by editing{' '}

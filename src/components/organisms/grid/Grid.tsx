@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const GridStyled = styled.div`
   display: flex;
